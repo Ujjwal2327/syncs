@@ -1,5 +1,5 @@
 export function resolveUrl(url, defaultUrl) {
-  const trimmedUrl = url.trim();
+  const trimmedUrl = url?.trim();
   try {
     new URL(trimmedUrl);
     return trimmedUrl;
